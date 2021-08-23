@@ -8,4 +8,12 @@ public class FizzbuzzTest {
         String result = subject.generate(1);
         assertEquals("1", result);
     }
+
+    @Test
+    void testGenerateListsNumbersUpToTwo() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result = subject.generate(2);
+        assertEquals("1, 2", result);
+    }
+
 }
