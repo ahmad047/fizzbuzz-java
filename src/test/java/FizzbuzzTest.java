@@ -24,4 +24,13 @@ public class FizzbuzzTest {
         assertEquals("1, 2, Fizz", result);
     }
 
+
+    @Test
+    void testGenerateListsNumbersUpToFive() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result;
+        result = subject.generate(5);
+        assertEquals("1, 2, Fizz, 4, Buzz", result);
+    }
+
 }
