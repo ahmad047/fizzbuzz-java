@@ -5,9 +5,16 @@ public class Fizzbuzz {
     public String generate(int upto) {
         String output = "";
         for (int i = 1; i <= upto; i++) {
-            output = output+Integer.toString(i)+", ";
+            if(i == 1){
+                output += "1";
+            } else if (i % 3 == 0){
+                output += ", "+"Fizz";
+            } else {
+                output += ", "+Integer.toString(i);
+            }
+
         }
         
-        return output.substring(0, output.length() - 2);
+        return output;
     }
 }

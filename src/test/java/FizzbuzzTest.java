@@ -16,4 +16,12 @@ public class FizzbuzzTest {
         assertEquals("1, 2", result);
     }
 
+    @Test
+    void testGenerateListsNumbersUpToThree() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result;
+        result = subject.generate(3);
+        assertEquals("1, 2, Fizz", result);
+    }
+
 }
