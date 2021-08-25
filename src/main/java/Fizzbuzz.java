@@ -7,6 +7,8 @@ public class Fizzbuzz {
         for (int i = 1; i <= upto; i++) {
             if(i == 1){
                 output += "1";
+            } else if (i % 15 == 0){
+                output += ", "+"Fizzbuzz";
             } else if (i % 3 == 0){
                 output += ", "+"Fizz";
             } else if (i % 5 == 0){
